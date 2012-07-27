@@ -438,6 +438,7 @@
 		324534E515C1A9D800A4DAF7 /* img_sml99.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_sml99.jpg; sourceTree = "<group>"; };
 		324534E615C1A9D800A4DAF7 /* tileable_wood_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileable_wood_texture.png; sourceTree = "<group>"; };
 		324535B115C1D8A400A4DAF7 /* bar_clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar_clean.png; path = ../resources/bar_clean.png; sourceTree = "<group>"; };
+		324535B315C2E38500A4DAF7 /* GalleryImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryImage.h; path = ../src/GalleryImage.h; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ImageRain_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRain_Prefix.pch; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
@@ -471,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				00BAE6590E7ED9C10018A608 /* ImageRainApp.cpp */,
+				324535B315C2E38500A4DAF7 /* GalleryImage.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -1080,7 +1082,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../cinder_0.8.3_mac;
+				CINDER_PATH = ../../Cinder;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
@@ -1095,7 +1097,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../cinder_0.8.3_mac;
+				CINDER_PATH = ../../Cinder;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
