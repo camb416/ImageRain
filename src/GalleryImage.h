@@ -50,8 +50,8 @@ GalleryImage::GalleryImage(string _path, char _align){
     x = y = z;
     align = _align;
     path = _path;
-    tex = gl::Texture(loadImage(loadUrl("http://25.media.tumblr.com/tumblr_m7c1drS9zB1qd0obwo1_500.jpg")));
-   // tex = gl::Texture(loadImage(loadResource(path)));
+    // tex = gl::Texture(loadImage(loadUrl("http://25.media.tumblr.com/tumblr_m7c1drS9zB1qd0obwo1_500.jpg")));
+   tex = gl::Texture(loadImage(loadResource(path)));
     
     if(align<3){
         vOffset = 0;
