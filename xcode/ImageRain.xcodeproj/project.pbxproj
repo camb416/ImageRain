@@ -15,6 +15,7 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00BAE65A0E7ED9C10018A608 /* ImageRainApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00BAE6590E7ED9C10018A608 /* ImageRainApp.cpp */; };
 		00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00CCAF14116A9FEE008396D5 /* CinderApp.icns */; };
+		1B795D2E15C9B80900678DCB /* postcard_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B795D2D15C9B80900678DCB /* postcard_foreground.png */; };
 		324534E715C1A9D800A4DAF7 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3245341D15C1A9D800A4DAF7 /* img1.jpg */; };
 		324534E815C1A9D800A4DAF7 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3245341E15C1A9D800A4DAF7 /* img10.jpg */; };
 		324534E915C1A9D800A4DAF7 /* img100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3245341F15C1A9D800A4DAF7 /* img100.jpg */; };
@@ -234,6 +235,7 @@
 		00CCAF14116A9FEE008396D5 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = SOURCE_ROOT; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1B795D2D15C9B80900678DCB /* postcard_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postcard_foreground.png; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		3245341D15C1A9D800A4DAF7 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1B795D2D15C9B80900678DCB /* postcard_foreground.png */,
 				324535B115C1D8A400A4DAF7 /* bar_clean.png */,
 				3245341C15C1A9D800A4DAF7 /* img */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -1019,6 +1022,7 @@
 				324535AE15C1A9D800A4DAF7 /* img_sml99.jpg in Resources */,
 				324535AF15C1A9D800A4DAF7 /* tileable_wood_texture.png in Resources */,
 				324535B215C1D8A400A4DAF7 /* bar_clean.png in Resources */,
+				1B795D2E15C9B80900678DCB /* postcard_foreground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,6 +1043,7 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CINDER_PATH = "$(SOURCE_ROOT)/../../../Downloads/cinder_0.8.4_mac";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1058,6 +1063,7 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CINDER_PATH = "$(SOURCE_ROOT)/../../../Downloads/cinder_0.8.4_mac";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_FAST_MATH = YES;
